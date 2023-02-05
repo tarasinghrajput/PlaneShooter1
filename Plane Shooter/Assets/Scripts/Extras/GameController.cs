@@ -10,6 +10,14 @@ public class GameController : MonoBehaviour
     public GameObject levelCompletePanel;
     public GameObject endText;
 
+    private GameObject levelLoader;
+
+
+    private void Awake() 
+    {
+        // levelLoader = GameObject.FindWithTag("LevelLoader");
+    }
+
     // Start is called before the first frame update
     void Start()
     {
