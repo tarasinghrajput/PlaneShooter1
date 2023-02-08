@@ -6,6 +6,8 @@ using UnityEngine;
 public class LevelLoader : MonoBehaviour
 {
     public GameObject loadingCanvas;
+    //public GameObject pausePanel;
+    //public GameObject pauseButton;
     public Animator transition;
     public float transitionTime = 1f;
     int currentIndex;
@@ -13,6 +15,8 @@ public class LevelLoader : MonoBehaviour
     private void Awake() 
     {
         loadingCanvas.SetActive(false);
+       // pausePanel.SetActive(false);
+        //pauseButton.SetActive(true);
     }
 
     // Start is called before the first frame update
@@ -60,11 +64,16 @@ public class LevelLoader : MonoBehaviour
     IEnumerator LoadLevel(int levelIndex)
     {
         transition.SetTrigger("Start");
-
+        Time.timeScale = 1f;
         loadingCanvas.SetActive(true);
-
         yield return new WaitForSeconds(transitionTime);
-
         SceneManager.LoadScene(levelIndex);
+    }
+
+    public void ResumeGame()
+    {
+        //pausePanel.SetActive(false);
+        Time.timeScale = 1f;
+        //pauseButton.SetActive(false);
     }
 }

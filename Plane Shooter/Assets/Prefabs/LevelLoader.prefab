@@ -107,7 +107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1867195251
 RectTransform:
   m_ObjectHideFlags: 0
@@ -237,6 +237,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingCanvas: {fileID: 1867195250}
+  pausePanel: {fileID: 0}
+  pauseButton: {fileID: 0}
   transition: {fileID: 1864898219}
   transitionTime: 1
 --- !u!95 &1864898219

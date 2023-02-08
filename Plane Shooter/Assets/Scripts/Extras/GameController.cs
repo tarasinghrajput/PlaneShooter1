@@ -67,5 +67,6 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(3f);
         Time.timeScale = 0f;
         levelCompletePanel.SetActive(true);
+        pauseButton.SetActive(false);
     }
 }
