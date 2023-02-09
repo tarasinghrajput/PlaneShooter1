@@ -68,5 +68,6 @@ public class GameController : MonoBehaviour
         Time.timeScale = 0f;
         levelCompletePanel.SetActive(true);
         pauseButton.SetActive(false);
+        Time.timeScale = 1f;
     }
 }

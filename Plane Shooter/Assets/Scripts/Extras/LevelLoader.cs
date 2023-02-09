@@ -49,7 +49,6 @@ public class LevelLoader : MonoBehaviour
     public void NextLevel()
     {
         // SceneManager.LoadScene(currentIndex + 1);
-        loadingCanvas.SetActive(true);
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 

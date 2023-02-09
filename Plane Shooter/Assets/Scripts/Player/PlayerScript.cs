@@ -94,6 +94,6 @@ public class PlayerScript : MonoBehaviour
             health -= 1;
             barFillAmount = barFillAmount - damage;
             playerHealthbar.SetAmount(barFillAmount);
-        }
+        }              
     }
 }
